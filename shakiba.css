@@ -1,0 +1,284 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+header{
+    position: sticky;
+    top: 0;
+}
+/* Offer section */
+.mid{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 300px;
+}
+.mid::before{
+    content: "";
+    opacity: 0.90;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    height: 40vw;
+    width: 100%;
+    border-radius: 1rem;
+    margin: 0px;
+    background:  url('Images/bg.jpg')no-repeat center center/cover ;    
+}
+
+#DailyOffer{
+    border-radius: 4px;
+    height: 130px;
+    width: 100px;
+    font-family: 'Baloo 2', cursive;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding: 14px;
+}
+#OfferIntro{
+    font-size: 2.1rem;
+    color: #3a0903;
+    font-weight: bold;
+}
+#DailyOffer::before{
+
+    content: "";
+    padding: 2px;
+    opacity: 0.79;
+    position: absolute;
+    z-index: -1;
+    height: inherit;
+     width: inherit;
+    border-radius: 1rem;
+    margin: 0px;
+    margin-bottom: 13rem;
+    background:  url('Images/gallery1.jpg')no-repeat center center/cover ;
+    
+}
+/* Navigation bar */
+.nav-links{
+    width: 70%;
+}
+#menu{
+    margin: 2px auto;
+    visibility: collapse;
+}
+
+#menu div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.navbar{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    align-items: center; 
+}
+.navbar::before{
+    content: "";margin: 0px;
+    background-color: rgb(45, 146, 40);
+    opacity: 0.6;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    top:0px;
+    left:0px;
+    
+}
+.navbar a,a{
+    text-decoration: none;
+    color: rgb(43, 9, 3);
+    border: olive;
+    padding: 10px;
+    padding-top: 0px;
+    font-size: 2rem;
+    font-family: 'Baloo 2', cursive;
+   
+}
+
+.navbar a:hover{
+    text-shadow: burlywood;
+    background-color: #29690b;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+/* Products section */
+.Products{
+    display: flex;
+    border-radius: 4px;
+    border:solid red;
+    padding: 2px;
+
+}
+.Products img{
+    height: 50%;
+    width:50%;
+}
+ /* about us section */
+.OurValues{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.OurValues>div{
+    border-radius: 5px;
+    padding: 2px;
+    font-family: 'Baloo 2', cursive;
+    width: 300px;
+    margin: auto;
+    margin: 2px;
+    font-weight: bolder;
+    color: rgb(45, 146, 40);
+    border: solid red;
+}
+.OurValues p{
+    font-weight: lighter;
+    font-size: 15px;
+    color: rosybrown;
+    width: 150px;
+    margin: auto;
+}
+/* logo in nav bar */
+#logo{
+    max-width: 20%;
+    height: inherit;
+    margin: 2px;
+    border-radius: 91px;
+    border: solid black;
+}
+#logoBox{
+    display: flex;width: 35%;
+}
+#logo-title{
+    width: 20%;
+    margin: 2px;
+}
+#logo-title p{
+    width: 50%;
+}
+/* .customer reviews */
+#HappyCustomers{
+    width: 100%;
+    padding: 7px;
+    border-radius: 4px;
+    margin: 3px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid black;
+}
+h3{   
+    font-size: 25px;
+    margin-bottom: 1px;
+}
+
+.customer{
+    max-height: 30%;
+    width: 39%;
+    display: flex;
+    border: solid;
+    border-radius: 5px;
+    margin: 2px;
+}
+.customer img{
+    height: inherit;
+    width: 60%;
+}
+.customer>p{
+    font-size: 11px;
+    margin: auto;
+    width: 35%;
+}
+/* contact form */
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #8c8c72;
+}
+form input{
+    width: 90%;
+    border-radius: 8px;
+    padding: 4px;
+    text-align: center;
+    font-size: 29px;
+    display: block;
+    background-color: whitesmoke;
+    margin: 2px auto;
+    border: solid;
+}
+form button{
+    font-size: 21px;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 5px;
+    
+}
+form button:hover{
+    color: ivory;
+    background-color: black;
+}
+
+footer{
+    width: 170px;
+    margin: auto;
+}
+/* for smart phones */
+@media only screen and (max-width:500px){
+    .nav-links{
+        display: none;
+        height: inherit;
+    }
+    
+    h3 {
+        font-size: 17px;
+    margin-bottom: 1px;
+    font-family: 'Baloo 2', cursive;
+    }
+    #logoBox{
+        height:inherit;
+    }
+    #logo{
+        display: none ;height:inherit;
+    }
+    #logo-title p{
+        font-size: 12px;
+        font-family: 'Baloo 2', cursive;
+    }
+    #menu{
+        margin: 2px auto;
+        visibility: visible;
+        cursor: pointer;
+    }
+    #menu div{
+        display: visible;
+    }
+    #menu:hover{
+        /* display: visible; */
+        background-color: rgb(21, 136, 8);
+        color: wheat;
+    }
+    .customer{
+        width: 85%;
+    }
+    .form input{
+        font-size: 6vw;
+    }
+}
